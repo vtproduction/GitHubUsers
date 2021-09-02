@@ -8,3 +8,6 @@ package com.midsummer.githubusers.internal
  */
 
 const val DATABASE_NAME  = "GithubUsers.db"
+const val BASE_URL = "https://api.github.com/"
+const val RESULT_PER_PAGE = 20
+const val START_QUERY_AT = 0
