@@ -11,10 +11,10 @@ import com.squareup.moshi.Json
 data class GithubUser(
     val id: Int,
 
-    @Json(name="login")
-    val username: String,
+    @field:Json(name="login") val username: String,
 
-    @Json(name="avatar_url")
-    val avatarUrl: String
+    @field:Json(name="avatar_url") val avatarUrl: String,
+
+    @field:Json(name="html_url") val userUrl: String
 
 )

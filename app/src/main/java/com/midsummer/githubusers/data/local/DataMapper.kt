@@ -14,7 +14,8 @@ import com.midsummer.githubusers.model.GithubUserDetail
 fun UserEntity.toUser() = GithubUser(
     this.id,
     this.username,
-    this.avatarUrl
+    this.avatarUrl,
+    this.userUrl
 )
 
 fun List<UserEntity>.toUserList() = this.map { it.toUser() }
@@ -22,7 +23,8 @@ fun List<UserEntity>.toUserList() = this.map { it.toUser() }
 fun GithubUser.toUserEntity() = UserEntity(
     this.id,
     this.username,
-    this.avatarUrl
+    this.avatarUrl,
+    this.userUrl
 )
 
 fun List<GithubUser>.toUserEntityList() = this.map { it.toUserEntity() }
@@ -35,7 +37,7 @@ fun UserDetailEntity.toUserDetail() = GithubUserDetail(
     this.bio,
     this.followers,
     this.following,
-    this.publicRepo
+    this.publicRepo,
 )
 
 fun GithubUserDetail.toUserDetailEntity() = UserDetailEntity(

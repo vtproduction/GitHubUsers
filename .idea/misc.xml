@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/bg_gradient.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/drawable/bg_list_ava.xml" value="0.17037037037037037" />
+        <entry key="app/src/main/res/drawable/bg_top_bottom_border.xml" value="0.2657407407407407" />
+        <entry key="app/src/main/res/drawable/custom_ripple.xml" value="0.17037037037037037" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/activity_scrolling.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/activity_user_detail.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_user_list.xml" value="0.1503623188405797" />
+        <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/item_view_not_found.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/user_list_item.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -94,4 +94,7 @@ dependencies {
     // optional - RxJava support for Room
     implementation "androidx.room:room-rxjava2:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
+
+    //Circle Image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }
