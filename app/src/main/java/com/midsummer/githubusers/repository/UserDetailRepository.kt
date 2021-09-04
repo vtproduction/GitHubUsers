@@ -9,8 +9,6 @@ import com.midsummer.githubusers.data.local.*
 import com.midsummer.githubusers.data.network.GithubAPI
 import com.midsummer.githubusers.di.AppModule
 import com.midsummer.githubusers.di.DaggerAppComponent
-import com.midsummer.githubusers.internal.RESULT_PER_PAGE
-import com.midsummer.githubusers.internal.START_QUERY_AT
 import com.midsummer.githubusers.model.GithubUser
 import com.midsummer.githubusers.model.GithubUserDetail
 import io.reactivex.android.schedulers.AndroidSchedulers

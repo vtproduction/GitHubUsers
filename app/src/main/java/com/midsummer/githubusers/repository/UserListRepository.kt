@@ -10,8 +10,6 @@ import com.midsummer.githubusers.data.local.toUserList
 import com.midsummer.githubusers.data.network.GithubAPI
 import com.midsummer.githubusers.di.AppModule
 import com.midsummer.githubusers.di.DaggerAppComponent
-import com.midsummer.githubusers.internal.RESULT_PER_PAGE
-import com.midsummer.githubusers.internal.START_QUERY_AT
 import com.midsummer.githubusers.model.GithubUser
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
@@ -105,7 +103,7 @@ class UserListRepository {
     }
 
     private fun insertData(): Disposable {
-        return api.getUserList(START_QUERY_AT, RESULT_PER_PAGE)
+        return api.getUserList(0,100)
             .subscribeOn(Schedulers.io())
             .subscribeWith(subscribeToDatabase())
     }

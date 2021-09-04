@@ -13,11 +13,9 @@ import com.midsummer.githubusers.R
 import com.midsummer.githubusers.databinding.ActivityUserDetailBinding
 import com.midsummer.githubusers.di.AppModule
 import com.midsummer.githubusers.di.DaggerAppComponent
-import com.midsummer.githubusers.internal.ipsum
 import com.midsummer.githubusers.internal.randomImageUrl
 import com.midsummer.githubusers.viewModel.UserDetailViewModel
 import kotlinx.android.synthetic.main.activity_user_detail.*
-import kotlinx.android.synthetic.main.activity_user_list.*
 
 class UserDetailActivity : AppCompatActivity() {
 
@@ -116,12 +114,14 @@ class UserDetailActivity : AppCompatActivity() {
                 Glide.with(imgCover)
                     .load(randomImageUrl())
                     .centerCrop()
+                    .placeholder(R.drawable.placeholder_ava)
+                    .fallback(R.drawable.placeholder_ava)
                     .skipMemoryCache(true)
                     .into(imgCover)
 
                 txtUserName.text = it.username
-                txtUserLocation.text = it.location
-                txtUserBio.text = it.bio
+                txtUserLocation.text = if (it.location.isNullOrBlank()) "No location found" else it.location
+                txtUserBio.text = if (it.bio.isNullOrBlank()) "No bio found." else it.bio
                 txtFollowers.text = it.followers.toString()
                 txtFollowing.text = it.following.toString()
                 txtRepos.text = it.publicRepo.toString()
