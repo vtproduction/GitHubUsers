@@ -114,8 +114,8 @@ class UserDetailActivity : AppCompatActivity() {
                 Glide.with(imgCover)
                     .load(randomImageUrl())
                     .centerCrop()
-                    .placeholder(R.drawable.placeholder_ava)
-                    .fallback(R.drawable.placeholder_ava)
+                    .placeholder(R.drawable.img_place_holder_cover)
+                    .fallback(R.drawable.img_place_holder_cover)
                     .skipMemoryCache(true)
                     .into(imgCover)
 

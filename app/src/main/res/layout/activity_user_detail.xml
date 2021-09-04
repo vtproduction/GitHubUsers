@@ -33,6 +33,7 @@
                     android:scaleType="centerCrop"
                     android:id="@+id/imgCover"
                     android:background="@color/grey"
+                    app:srcCompat="@drawable/img_place_holder_cover"
                     app:layout_constraintTop_toTopOf="parent"/>
 
                 <de.hdodenhof.circleimageview.CircleImageView
